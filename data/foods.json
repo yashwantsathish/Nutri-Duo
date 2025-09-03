@@ -19,7 +19,7 @@
     "fat": 0.3,
     "fiber": 3.1,
     "category": "fruit",
-    "notes": "High in potassium (~422mg)."
+    "notes": "High in potassium."
   },
   {
     "name": "Orange",
@@ -31,6 +31,28 @@
     "fiber": 3.1,
     "category": "fruit",
     "notes": "Great source of vitamin C."
+  },
+  {
+    "name": "Mango",
+    "serving": "1 cup (165g)",
+    "calories": 99,
+    "protein": 1.4,
+    "carbs": 25,
+    "fat": 0.6,
+    "fiber": 2.6,
+    "category": "fruit",
+    "notes": "High in vitamin A."
+  },
+  {
+    "name": "Pineapple",
+    "serving": "1 cup chunks (165g)",
+    "calories": 82,
+    "protein": 0.9,
+    "carbs": 22,
+    "fat": 0.2,
+    "fiber": 2.3,
+    "category": "fruit",
+    "notes": "Contains bromelain enzyme."
   },
   {
     "name": "Blueberries",
@@ -55,44 +77,44 @@
     "notes": "Vitamin C and manganese."
   },
   {
-    "name": "Grapes",
-    "serving": "1 cup (151g)",
-    "calories": 104,
-    "protein": 1.1,
-    "carbs": 27.3,
+    "name": "Watermelon",
+    "serving": "1 cup diced (152g)",
+    "calories": 46,
+    "protein": 0.9,
+    "carbs": 12,
     "fat": 0.2,
-    "fiber": 1.4,
+    "fiber": 0.6,
     "category": "fruit",
-    "notes": "Resveratrol in skins."
+    "notes": "Hydrating fruit."
   },
   {
-    "name": "Avocado",
-    "serving": "1/2 medium (100g)",
-    "calories": 160,
-    "protein": 2.0,
-    "carbs": 8.5,
-    "fat": 14.7,
-    "fiber": 6.7,
+    "name": "Pear",
+    "serving": "1 medium (178g)",
+    "calories": 101,
+    "protein": 0.6,
+    "carbs": 27,
+    "fat": 0.2,
+    "fiber": 6,
     "category": "fruit",
-    "notes": "Monounsaturated fats."
+    "notes": "Good fiber source."
   },
   {
-    "name": "Tomato",
-    "serving": "1 medium (123g)",
-    "calories": 22,
-    "protein": 1.1,
-    "carbs": 4.8,
-    "fat": 0.2,
-    "fiber": 1.5,
-    "category": "vegetable",
-    "notes": "Lycopene source."
+    "name": "Kiwi",
+    "serving": "1 medium (69g)",
+    "calories": 42,
+    "protein": 0.8,
+    "carbs": 10,
+    "fat": 0.4,
+    "fiber": 2.1,
+    "category": "fruit",
+    "notes": "High in vitamin C."
   },
   {
     "name": "Carrot",
     "serving": "1 medium (61g)",
     "calories": 25,
     "protein": 0.6,
-    "carbs": 6.0,
+    "carbs": 6,
     "fat": 0.1,
     "fiber": 1.7,
     "category": "vegetable",
@@ -103,7 +125,7 @@
     "serving": "1 cup chopped (91g)",
     "calories": 31,
     "protein": 2.5,
-    "carbs": 6.0,
+    "carbs": 6,
     "fat": 0.3,
     "fiber": 2.4,
     "category": "vegetable",
@@ -132,37 +154,70 @@
     "notes": "Vitamin A, K, C."
   },
   {
-    "name": "Frozen Veggie Mix",
-    "serving": "1 cup (160g)",
-    "calories": 118,
-    "protein": 5.0,
-    "carbs": 22.0,
-    "fat": 1.2,
-    "fiber": 5.0,
+    "name": "Bell Pepper",
+    "serving": "1 cup (92g)",
+    "calories": 30,
+    "protein": 1,
+    "carbs": 7,
+    "fat": 0.3,
+    "fiber": 2.5,
     "category": "vegetable",
-    "notes": "Corn, peas, carrots, beans mix varies."
+    "notes": "High in vitamin C."
   },
   {
-    "name": "Potato (Russet, baked)",
-    "serving": "1 medium (173g)",
-    "calories": 168,
-    "protein": 4.6,
-    "carbs": 37,
-    "fat": 0.2,
-    "fiber": 4.0,
-    "category": "starch",
-    "notes": "Good potassium."
-  },
-  {
-    "name": "Sweet Potato (baked)",
-    "serving": "1 medium (130g)",
-    "calories": 112,
-    "protein": 2.0,
-    "carbs": 26,
+    "name": "Cucumber",
+    "serving": "1 cup (104g)",
+    "calories": 16,
+    "protein": 0.7,
+    "carbs": 4,
     "fat": 0.1,
-    "fiber": 3.9,
-    "category": "starch",
-    "notes": "Beta-carotene."
+    "fiber": 0.5,
+    "category": "vegetable",
+    "notes": "Mostly water."
+  },
+  {
+    "name": "Tomato",
+    "serving": "1 medium (123g)",
+    "calories": 22,
+    "protein": 1.1,
+    "carbs": 4.8,
+    "fat": 0.2,
+    "fiber": 1.5,
+    "category": "vegetable",
+    "notes": "Lycopene source."
+  },
+  {
+    "name": "Zucchini",
+    "serving": "1 medium (196g)",
+    "calories": 33,
+    "protein": 2.4,
+    "carbs": 6,
+    "fat": 0.6,
+    "fiber": 2,
+    "category": "vegetable",
+    "notes": "Low calorie squash."
+  },
+  {
+    "name": "Cauliflower",
+    "serving": "1 cup (107g)",
+    "calories": 27,
+    "protein": 2.1,
+    "carbs": 5,
+    "fat": 0.3,
+    "fiber": 2.1,
+    "category": "vegetable",
+    "notes": "Cruciferous vegetable."
+  },
+  {
+    "name": "Onion",
+    "serving": "1 medium (110g)",
+    "calories": 44,
+    "protein": 1.2,
+    "carbs": 10,
+    "fat": 0.1,
+    "fiber": 1.9,
+    "category": "vegetable",
+    "notes": "Flavorful allium."
   },
   {
     "name": "White Rice (cooked)",
@@ -187,6 +242,17 @@
     "notes": "More fiber than white rice."
   },
   {
+    "name": "Quinoa (cooked)",
+    "serving": "1 cup (185g)",
+    "calories": 222,
+    "protein": 8.1,
+    "carbs": 39.4,
+    "fat": 3.6,
+    "fiber": 5.2,
+    "category": "grain",
+    "notes": "Complete protein seed."
+  },
+  {
     "name": "Oats (rolled, dry)",
     "serving": "1/2 cup (40g)",
     "calories": 150,
@@ -209,37 +275,26 @@
     "notes": "Check brand labels."
   },
   {
-    "name": "Corn Tortilla",
-    "serving": "1 small (28g)",
-    "calories": 58,
-    "protein": 1.6,
-    "carbs": 12,
-    "fat": 0.7,
-    "fiber": 1.7,
-    "category": "grain",
-    "notes": "Nixtamalized corn."
+    "name": "Potato (baked)",
+    "serving": "1 medium (173g)",
+    "calories": 168,
+    "protein": 4.6,
+    "carbs": 37,
+    "fat": 0.2,
+    "fiber": 4.0,
+    "category": "starch",
+    "notes": "Good potassium source."
   },
   {
-    "name": "Flour Tortilla",
-    "serving": "1 medium 8\" (49g)",
-    "calories": 150,
-    "protein": 4.0,
-    "carbs": 24,
-    "fat": 4.5,
-    "fiber": 1.0,
-    "category": "grain",
-    "notes": "Varies by brand."
-  },
-  {
-    "name": "Quinoa (cooked)",
-    "serving": "1 cup (185g)",
-    "calories": 222,
-    "protein": 8.1,
-    "carbs": 39.4,
-    "fat": 3.6,
-    "fiber": 5.2,
-    "category": "grain",
-    "notes": "Complete protein grain-like seed."
+    "name": "Sweet Potato (baked)",
+    "serving": "1 medium (130g)",
+    "calories": 112,
+    "protein": 2.0,
+    "carbs": 26,
+    "fat": 0.1,
+    "fiber": 3.9,
+    "category": "starch",
+    "notes": "Beta-carotene."
   },
   {
     "name": "Pasta (cooked)",
@@ -264,17 +319,6 @@
     "notes": "Lean protein."
   },
   {
-    "name": "Rotisserie Chicken (mixed)",
-    "serving": "3 oz (85g)",
-    "calories": 170,
-    "protein": 23,
-    "carbs": 0,
-    "fat": 8,
-    "fiber": 0,
-    "category": "protein",
-    "notes": "Includes skin/drippings."
-  },
-  {
     "name": "Salmon (cooked)",
     "serving": "3 oz (85g)",
     "calories": 177,
@@ -284,28 +328,6 @@
     "fiber": 0,
     "category": "protein",
     "notes": "Omega-3 fats."
-  },
-  {
-    "name": "Tuna (canned in water)",
-    "serving": "3 oz (85g)",
-    "calories": 100,
-    "protein": 22,
-    "carbs": 0,
-    "fat": 1,
-    "fiber": 0,
-    "category": "protein",
-    "notes": "Lean and convenient."
-  },
-  {
-    "name": "Tofu (firm)",
-    "serving": "3 oz (85g)",
-    "calories": 80,
-    "protein": 8,
-    "carbs": 2,
-    "fat": 5,
-    "fiber": 1,
-    "category": "protein",
-    "notes": "Soy isoflavones."
   },
   {
     "name": "Egg",
@@ -319,17 +341,6 @@
     "notes": "Choline rich."
   },
   {
-    "name": "Egg Whites",
-    "serving": "3 tbsp (46g)",
-    "calories": 25,
-    "protein": 5,
-    "carbs": 0.4,
-    "fat": 0,
-    "fiber": 0,
-    "category": "protein",
-    "notes": "Pure protein."
-  },
-  {
     "name": "Greek Yogurt (plain, 2%)",
     "serving": "3/4 cup (170g)",
     "calories": 120,
@@ -339,17 +350,6 @@
     "fiber": 0,
     "category": "dairy",
     "notes": "High protein dairy."
-  },
-  {
-    "name": "Whole Milk",
-    "serving": "1 cup (244g)",
-    "calories": 149,
-    "protein": 7.7,
-    "carbs": 12,
-    "fat": 8,
-    "fiber": 0,
-    "category": "dairy",
-    "notes": "Lactose carb content."
   },
   {
     "name": "Cheddar Cheese",
@@ -363,26 +363,15 @@
     "notes": "Calcium source."
   },
   {
-    "name": "Edamame (shelled, cooked)",
-    "serving": "1/2 cup (78g)",
-    "calories": 95,
-    "protein": 9,
-    "carbs": 8,
-    "fat": 4,
-    "fiber": 4,
+    "name": "Tofu (firm)",
+    "serving": "3 oz (85g)",
+    "calories": 80,
+    "protein": 8,
+    "carbs": 2,
+    "fat": 5,
+    "fiber": 1,
     "category": "protein",
-    "notes": "Complete plant protein."
-  },
-  {
-    "name": "Chickpeas (cooked)",
-    "serving": "1/2 cup (125g)",
-    "calories": 135,
-    "protein": 7,
-    "carbs": 22,
-    "fat": 2,
-    "fiber": 6,
-    "category": "legume",
-    "notes": "High fiber legume."
+    "notes": "Soy isoflavones."
   },
   {
     "name": "Black Beans (cooked)",
@@ -407,6 +396,17 @@
     "notes": "Iron and folate."
   },
   {
+    "name": "Almonds",
+    "serving": "1 oz (28g)",
+    "calories": 164,
+    "protein": 6,
+    "carbs": 6,
+    "fat": 14,
+    "fiber": 3.5,
+    "category": "nut/seed",
+    "notes": "Vitamin E rich."
+  },
+  {
     "name": "Peanut Butter",
     "serving": "2 tbsp (32g)",
     "calories": 190,
@@ -418,19 +418,8 @@
     "notes": "Check added sugar."
   },
   {
-    "name": "Almonds",
-    "serving": "1 oz (28g, ~23 nuts)",
-    "calories": 164,
-    "protein": 6,
-    "carbs": 6,
-    "fat": 14,
-    "fiber": 3.5,
-    "category": "nut/seed",
-    "notes": "Vitamin E rich."
-  },
-  {
     "name": "Walnuts",
-    "serving": "1 oz (28g, ~14 halves)",
+    "serving": "1 oz (28g)",
     "calories": 185,
     "protein": 4.3,
     "carbs": 3.9,
@@ -449,126 +438,5 @@
     "fiber": 4.1,
     "category": "nut/seed",
     "notes": "Absorbs water; high fiber."
-  },
-  {
-    "name": "Flaxseed (ground)",
-    "serving": "1 tbsp (7g)",
-    "calories": 37,
-    "protein": 1.3,
-    "carbs": 2,
-    "fat": 3,
-    "fiber": 1.9,
-    "category": "nut/seed",
-    "notes": "ALA omega-3; lignans."
-  },
-  {
-    "name": "Hummus",
-    "serving": "2 tbsp (30g)",
-    "calories": 70,
-    "protein": 2,
-    "carbs": 4,
-    "fat": 5,
-    "fiber": 1.5,
-    "category": "legume",
-    "notes": "Chickpeas + tahini."
-  },
-  {
-    "name": "Olive Oil",
-    "serving": "1 tbsp (14g)",
-    "calories": 119,
-    "protein": 0,
-    "carbs": 0,
-    "fat": 14,
-    "fiber": 0,
-    "category": "fat",
-    "notes": "No carbs/protein; all fat."
-  },
-  {
-    "name": "Avocado Oil",
-    "serving": "1 tbsp (14g)",
-    "calories": 120,
-    "protein": 0,
-    "carbs": 0,
-    "fat": 14,
-    "fiber": 0,
-    "category": "fat",
-    "notes": "All fat; not 'calorie-free'."
-  },
-  {
-    "name": "Butter (salted)",
-    "serving": "1 tbsp (14g)",
-    "calories": 102,
-    "protein": 0.1,
-    "carbs": 0,
-    "fat": 11.5,
-    "fiber": 0,
-    "category": "fat",
-    "notes": "Mostly saturated fat."
-  },
-  {
-    "name": "Marinara Sauce",
-    "serving": "1/2 cup (125g)",
-    "calories": 70,
-    "protein": 2,
-    "carbs": 12,
-    "fat": 2,
-    "fiber": 3,
-    "category": "sauce",
-    "notes": "Varies by brand; added sugar."
-  },
-  {
-    "name": "Vodka Sauce",
-    "serving": "1/2 cup (125g)",
-    "calories": 180,
-    "protein": 4,
-    "carbs": 7,
-    "fat": 15,
-    "fiber": 1,
-    "category": "sauce",
-    "notes": "Cream-based; higher fat."
-  },
-  {
-    "name": "Cheese Pizza (slice, 14\")",
-    "serving": "1 slice (107g)",
-    "calories": 285,
-    "protein": 12,
-    "carbs": 36,
-    "fat": 10,
-    "fiber": 2.5,
-    "category": "mixed",
-    "notes": "Highly variable."
-  },
-  {
-    "name": "Quesadilla (cheese, 8\" tortilla)",
-    "serving": "1 quesadilla (~130g)",
-    "calories": 420,
-    "protein": 18,
-    "carbs": 33,
-    "fat": 24,
-    "fiber": 2,
-    "category": "mixed",
-    "notes": "Varies by cheese amount."
-  },
-  {
-    "name": "Protein Powder (whey)",
-    "serving": "1 scoop (30g)",
-    "calories": 120,
-    "protein": 24,
-    "carbs": 3,
-    "fat": 1.5,
-    "fiber": 0,
-    "category": "supplement",
-    "notes": "Brand dependent."
-  },
-  {
-    "name": "Greek Yogurt Bowl (w/ berries)",
-    "serving": "1 bowl (~220g)",
-    "calories": 180,
-    "protein": 18,
-    "carbs": 22,
-    "fat": 3,
-    "fiber": 3,
-    "category": "mixed",
-    "notes": "Homemade estimate."
   }
 ]
