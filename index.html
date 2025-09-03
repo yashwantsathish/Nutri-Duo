@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NutriDuo — Daily Nutrition Practice</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="assets/icon-192.png">
+  <link rel="apple-touch-icon" href="assets/icon-192.png">
+  <meta name="theme-color" content="#10B981" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="app">
+    <header class="topbar">
+      <div class="top-left">
+        <span class="xp">⭐ <span id="xp">0</span> XP</span>
+        <span class="streak">🔥 <span id="streak">0</span></span>
+      </div>
+      <div class="branding">
+        <img src="assets/logo.svg" alt="NutriDuo" class="logo"/>
+        <h1>NutriDuo</h1>
+      </div>
+      <div class="top-right">
+        <span class="hearts" id="hearts">❤️❤️❤️</span>
+        <button class="icon-btn" id="settingsBtn" title="Settings / Editor">⚙️</button>
+      </div>
+    </header>
+
+    <main id="screen-home" class="screen active">
+      <section class="hero">
+        <h2>Train nutrition knowledge daily — Duolingo style.</h2>
+        <p>Master calories, macros, fiber & smart swaps with quick, gamified drills.</p>
+        <div class="cta-row">
+          <button id="startDailyBtn" class="btn primary">Start Daily Lesson</button>
+          <button id="practiceBtn" class="btn">Practice</button>
+        </div>
+        <div class="stats-row">
+          <div class="stat-card">
+            <div class="stat-label">Today's Goal</div>
+            <div class="stat-value"><span id="goalProgress">0</span>/10</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-label">Best Streak</div>
+            <div class="stat-value" id="bestStreak">0</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-label">Total XP</div>
+            <div class="stat-value" id="totalXp">0</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="skills">
+        <h3>Skills</h3>
+        <div class="skill-grid">
+          <button class="skill" data-skill="calories">Calories</button>
+          <button class="skill" data-skill="protein">Protein</button>
+          <button class="skill" data-skill="fiber">Fiber</button>
+          <button class="skill" data-skill="carbs">Carbs</button>
+          <button class="skill" data-skill="fat">Fats</button>
+          <button class="skill" data-skill="compare">Compare</button>
+          <button class="skill" data-skill="truefalse">True / False</button>
+        </div>
+      </section>
+    </main>
+
+    <main id="screen-lesson" class="screen">
+      <div class="progress">
+        <div id="progressBar"></div>
+      </div>
+      <div id="questionArea"></div>
+      <div id="feedback"></div>
+      <div class="controls">
+        <button id="skipBtn" class="btn subtle">Skip</button>
+        <button id="submitBtn" class="btn primary">Submit</button>
+      </div>
+    </main>
+
+    <main id="screen-result" class="screen">
+      <h2>Lesson Complete 🎉</h2>
+      <p id="resultSummary"></p>
+      <div class="cta-row">
+        <button id="againBtn" class="btn">Practice Again</button>
+        <button id="homeBtn" class="btn primary">Home</button>
+      </div>
+      <div class="review-list" id="reviewList"></div>
+    </main>
+
+    <div id="settingsModal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3>Settings & Data</h3>
+          <button class="icon-btn" id="closeSettings">✖️</button>
+        </div>
+        <div class="tabs">
+          <button class="tab active" data-tab="prefs">Preferences</button>
+          <button class="tab" data-tab="editor">Food Editor</button>
+          <button class="tab" data-tab="import">Import/Export</button>
+        </div>
+        <div class="tab-panel active" id="tab-prefs">
+          <label class="row">
+            Daily goal (questions): 
+            <input id="dailyGoal" type="number" min="5" max="50" value="10"/>
+          </label>
+          <label class="row">
+            Answer range leniency for numeric questions (±%): 
+            <input id="leniency" type="number" min="0" max="50" value="10"/>
+          </label>
+          <button class="btn" id="savePrefs">Save</button>
+          <button class="btn subtle" id="resetAll">Reset Progress</button>
+        </div>
+        <div class="tab-panel" id="tab-editor">
+          <p>Add a custom food:</p>
+          <div class="grid2">
+            <input id="fName" placeholder="Name"/>
+            <input id="fServing" placeholder="Serving (e.g., 1 cup (150g))"/>
+            <input id="fCalories" type="number" placeholder="Calories"/>
+            <input id="fProtein" type="number" step="0.1" placeholder="Protein (g)"/>
+            <input id="fCarbs" type="number" step="0.1" placeholder="Carbs (g)"/>
+            <input id="fFat" type="number" step="0.1" placeholder="Fat (g)"/>
+            <input id="fFiber" type="number" step="0.1" placeholder="Fiber (g)"/>
+            <input id="fCategory" placeholder="Category (e.g., fruit)"/>
+          </div>
+          <textarea id="fNotes" placeholder="Notes (optional)"></textarea>
+          <button class="btn" id="addFoodBtn">Add Food</button>
+          <div id="editorMsg" class="muted"></div>
+        </div>
+        <div class="tab-panel" id="tab-import">
+          <p>Export your current foods database and progress to JSON, or import from JSON.</p>
+          <div class="row">
+            <button class="btn" id="exportData">Export JSON</button>
+            <input type="file" id="importFile" accept="application/json"/>
+          </div>
+          <pre id="exportOutput"></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
