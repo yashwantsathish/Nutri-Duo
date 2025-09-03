@@ -266,6 +266,14 @@ function renderQuestion(){
 
 function withinLeniency(input, correct, pct){
   if (isNaN(input)) return false;
+
+  // Always accept if rounded values match
+  if (Math.round(input) === Math.round(correct)) return true;
+
+  // For small numbers (<20), rounding match is the only leniency
+  if (correct < 20) return false;
+
+  // For larger numbers, fall back to percentage-based leniency
   const diff = Math.abs(input - correct);
   const allowed = (pct/100) * Math.max(1, correct);
   return diff <= allowed;
